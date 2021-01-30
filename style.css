@@ -1,0 +1,64 @@
+body{
+    background: #fafafa;
+}
+
+#dino{
+    width: 60px;
+    height: 60px;
+    background-image: url("img/dino.png");
+    position: absolute;
+    bottom: 0;
+}
+
+.cactus{
+    width: 60px;
+    height: 60px;
+    background-image: url("img/cactus.png");
+    position:absolute;
+    bottom:0;
+    right: 0;
+}
+
+#endgame, .score{
+    color: #4e4e4e;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.score{
+    text-align: left;
+    font-size: 1.5em;
+}
+
+#play{
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #4e4e4e;
+    color: #fafafa;
+    border-radius: 5px;      
+}
+#play:hover{   
+    background-color:#fafafa ;
+    color: #4e4e4e;    
+    border: #4e4e4e solid 1px;
+}
+
+@keyframes slideright{
+    from{
+    background-position: 70000%;
+    }
+
+    to{
+        background-position: 0;
+    }
+}
+#background{
+    position: absolute;
+    bottom: 0;
+    background-image:  url("img/background.png");
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    z-index: -1;
+    width: 99%;
+    height: 200px;
+}
